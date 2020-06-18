@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        img {
+            vertical-align: bottom;
+        }
+        
+        .item-group {
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+        }
+        
+        .bg img {
+            width: 100%;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .title h2 {
+            text-align: center;
+            font-size: 46px;
+        }
+        
+        .title {
+            margin: 0 0px 10px;
+            padding: 20px 10px;
+            background-color: #ccc;
+        }
+        
+        .title p {
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        .item {
+            margin: 0 10px 20px;
+        }
+        
+        .item .text h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        .item .pic img {
+            width: 100%;
+        }
+        
+        .two {
+            margin: 60px 0;
+            background-color: #ffa;
+        }
+        
+        .header {
+            height: 50px;
+            background-color: #000;
+            position: relative;
+        }
+        
+        .btn {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        
+        .btn span {
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa, 0px -8px 0px #aaa;
+        }
+        
+        .rwdTable {
+            display: table;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 5px;
+        }
+        
+        .rwdTr,
+        .rwdTitle_gorup {
+            display: table-row;
+        }
+        
+        .rwdTd {
+            display: table-cell;
+            vertical-align: top;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        
+        nav {
+            width: 40%;
+            height: 100vh;
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+        }
+        
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #a6e22e;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22e;
+        }
+        
+        #menu {
+            position: absolute;
+        }
+        
+        #menu:checked~.header nav {
+            left: 0;
+        }
+        
+        @media screen and (min-width:768px) {
+            .item-group {
+                display: flex;
+            }
+            .btn {
+                display: none;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav {
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+                background-color: transparent;
+            }
+            nav a {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menu">
+
+    <div class="header">
+        <h1 class="logo">
+        </h1>
+        <label for="menu" class="btn"> 
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="遊戲介紹.html">遊戲介紹</a>
+            <a href="白鷹.html">白鷹</a>
+            <a href="皇家.html">皇家</a>
+            <a href="鐵血.html">鐵血</a>
+            <a href="重櫻.html">重櫻</a>
+        </nav>
+    </div>
+    <div class="bg">
+        <img src=https://cdn-images-1.medium.com/fit/t/1600/480/1*6O4APCI-gNJ7sA7xGYoM0w.jpeg>
+    </div>
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2><a href="遊戲介紹.html">碧藍航線</a></h2>
+                <p>一款由中國上海蠻啾網絡科技與廈門勇仕網絡技術製作，由bilibili發行的戰艦萌擬人化即時海戰類的iOS及Android智慧型手機遊戲，於2017年5月25日開始營運。日語版由上海悠星代理發行，2017年9月14日開始營運。韓國由心動全球代理，已於2018年2月公布韓文官方推特。</p>
+            </div>
+            <div class="item-group">
+                <div class="item ">
+                    <div class="pic ">
+                        <a href="白鷹.html"><img src="https://img.moegirl.org/common/2/22/BLHX%E7%99%BD%E9%B9%B0%E6%8E%92%E7%89%88%E7%94%A8%E6%94%B92.png"></a>
+                    </div>
+                    <div class="text ">
+                        <h3>白鷹</h3>
+                        <p>USS白鷹聯邦（Eagle Union）</p>
+                        <p>(United States Ship)</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="pic ">
+                        <a href="皇家.html"><img src="https://img.moegirl.org/common/2/2c/BLHX%E7%9A%87%E5%AE%B6%E6%8E%92%E7%89%88%E7%94%A8%E6%94%B92.png"></a>
+                    </div>
+                    <div class="text ">
+                        <h3>皇家</h3>
+                        <p>HMS皇家海軍（Royal Navy）</p>
+                        <p>(Her/His Majesty's Ship)</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="pic ">
+                        <a href="鐵血.html"><img src="https://img.moegirl.org/common/6/68/BLHX%E9%93%81%E8%A1%80%E6%8E%92%E7%89%88%E7%94%A8%E6%94%B92.png"></a>
+                    </div>
+                    <div class="text ">
+                        <h3>鐵血</h3>
+                        <p>KMS鐵血公國（Iron Blood）</p>
+                        <p>(Kriegsmarine Ship)</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <div class="pic ">
+                        <a href="重櫻.html"><img src="https://img.moegirl.org/common/d/dc/BLHX%E9%87%8D%E6%A8%B1%E6%8E%92%E7%89%88%E7%94%A8%E6%94%B92.png"></a>
+                    </div>
+                    <div class="text ">
+                        <h3>重櫻</h3>
+                        <p>IJN(IRN)重櫻群島（Sakura Empire）</p>
+                        <p>(Imperial Japanese Navy)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer ">
+        ...
+    </div>
+
+
+
+
+
+</body>
+
+</html>
